@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pokemon Table - React | Next JS | Typescript | SSR | Tailwind CSS
+
+Your comprehensive Pokémon database. Explore, discover, and learn about all your favorite Pokémon with detailed statistics and information.
 
 ## Getting Started
 
