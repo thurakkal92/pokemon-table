@@ -8,16 +8,18 @@ import { Suspense } from "react";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
-export default async function Home({
-  searchParams,
-}: {
-  searchParams: { search?: string; page?: string; limit?: string };
-}) {
+type PageProps = {
+  searchParams: Promise<{ search?: string; page?: string; limit?: string }>;
+};
+
+export default async function Home({ searchParams }: PageProps) {
   const queryClient = getQueryClient();
 
-  const searchTerm = searchParams.search?.toLowerCase() || "";
-  const page = parseInt(searchParams.page || "1", 10);
-  const limit = parseInt(searchParams.limit || "20", 10);
+  const resolvedSearchParams = await searchParams;
+
+  const searchTerm = resolvedSearchParams.search?.toLowerCase() || "";
+  const page = parseInt(resolvedSearchParams.page || "1", 10);
+  const limit = parseInt(resolvedSearchParams.limit || "20", 10);
   try {
     // Prefetch users data on server
     await queryClient.prefetchQuery({
