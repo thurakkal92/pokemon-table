@@ -24,7 +24,6 @@ export const pokemonApi = {
         `${API_CONFIG.BASE_URL}${API_CONFIG.API_VERSION}${API_ENDPOINTS.POKEMON.GET_ALL}?limit=${limit}&offset=${offset}`
       );
 
-      console.log("Fetched Pokemon data:", data);
       const detailedResults = await Promise.all(
         data.results.map(async (pokemon: PokemonResult) => {
           try {
