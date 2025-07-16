@@ -2,10 +2,10 @@
 
 A modern, server-side rendered Pokemon application built with Next.js, React Query, and shadcn/ui components.
 
-![Next JS](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
+![Next JS](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
 ![React Query](https://img.shields.io/badge/React_Query-5.17-red?style=for-the-badge&logo=react-query)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=for-the-badge&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=for-the-badge&logo=tailwind-css)
 
 ## ✨ Features
 
