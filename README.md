@@ -32,27 +32,30 @@ A modern, server-side rendered Pokemon application built with Next.js, React Que
 ### Installation
 
 1. **Clone the repository**
-   \`\`\`bash
+
+```js
    git clone https://github.com/your-username/pokemon-table-app.git
    cd pokemon-table-app
-   \`\`\`
+```
 
 2. **Install dependencies**
-   \`\`\`bash
-   npm install
-   \`\`\`
+
+```js
+  npm install
+```
 
 3. **Start the development server**
-   \`\`\`bash
-   npm run dev
-   \`\`\`
+
+```js
+ npm run dev
+```
 
 4. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ### Available Scripts
 
-\`\`\`bash
+```js
 
 # Development
 
@@ -64,11 +67,11 @@ npm run start # Start production server
 
 npm run lint # Run ESLint
 
-\`\`\`
+```
 
 ## 🏗️ Project Structure
 
-\`\`\`
+```js
 
 pokemon-table-app/
 ├── app/ # Next.js App Router
@@ -105,7 +108,8 @@ pokemon-table-app/
 ├── package.json # Dependencies and scripts
 ├── postcss.config.mjs # PostCSS configuration
 └── tsconfig.json # TypeScript configuration
-\`\`\`
+
+```
 
 ## 🛠️ Technology Stack
 
@@ -132,33 +136,35 @@ pokemon-table-app/
 - **Base URL**: `https://pokeapi.co/api/v2/`
 - **Endpoints Used**:
 
-  - `/pokemon` - Pokémon list and details
+- `/pokemon` - Pokémon list and details
 
-  ## 🚀 Deployment
+## 🚀 Deployment
 
 ### **Vercel Deployment** (Recommended)
 
 1. **Connect Repository**
-   \`\`\`bash
 
-   # Install Vercel CLI
+```js
 
-   npm i -g vercel
+# Install Vercel CLI
 
-   # Deploy
+npm i -g vercel
 
-   vercel
-   \`\`\`
+# Deploy
+
+vercel
+
+```
 
 2. **Environment Variables**
 
-   - No environment variables required (uses public PokéAPI)
+- No environment variables required (uses public PokéAPI)
 
 3. **Build Configuration**
-   \`\`\`json
+   ```js
    {
    "buildCommand": "npm run build",
    "outputDirectory": ".next",
    "framework": "nextjs"
    }
-   \`\`\`
+   ```
