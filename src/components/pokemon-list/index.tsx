@@ -43,7 +43,7 @@ export default function PokemonList({ page, limit }: PokemonListProps) {
     itemsPerPage = limit,
     handlePageChange,
     handleItemsPerPageChange,
-  } = usePagination(20);
+  } = usePagination(10);
 
   const { data, isLoading, error } = usePokemonList({
     page: currentPage,
