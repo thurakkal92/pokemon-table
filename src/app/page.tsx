@@ -2,7 +2,7 @@ import { pokemonApi } from "@/lib/api/pokemon-api";
 import { getQueryClient } from "@/lib/get-query-client";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import PokemonList from "@/components/pokemon-list";
-import PokemonListLoading from "@/components/pokemon-list-loading";
+import PokemonListLoading from "@/components/pokemon-list/pokemon-list-loading";
 import { Suspense } from "react";
 
 import Header from "@/components/layout/header";
@@ -19,7 +19,7 @@ export default async function Home({ searchParams }: PageProps) {
 
   const searchTerm = resolvedSearchParams.search?.toLowerCase() || "";
   const page = parseInt(resolvedSearchParams.page || "1", 10);
-  const limit = parseInt(resolvedSearchParams.limit || "20", 10);
+  const limit = parseInt(resolvedSearchParams.limit || "10", 10);
   try {
     // Prefetch users data on server
     await queryClient.prefetchQuery({

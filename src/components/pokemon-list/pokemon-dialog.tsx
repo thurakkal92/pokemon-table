@@ -19,11 +19,11 @@ import {
 } from "lucide-react";
 import { usePokemonDetails } from "@/hooks/use-pokemon";
 import Image from "next/image";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { formatPokemonHeight, formatPokemonWeight } from "@/lib/utils";
-import { Progress } from "./ui/progress";
-import EvolutionTriggerTable from "./evolution-trigger-table";
+import { Progress } from "@/components/ui/progress";
+import EvolutionTriggerTable from "@/components/pokemon-list/evolution-trigger-table";
 
 interface PokemonDialogProps {
   pokemonName: string;

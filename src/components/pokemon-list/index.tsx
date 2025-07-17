@@ -5,7 +5,7 @@ import { Eye, Search } from "lucide-react";
 import { useRef, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { useSearchParams, useRouter } from "next/navigation";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Table,
   TableBody,
@@ -21,8 +21,8 @@ import { Badge } from "@/components/ui/badge";
 import { usePagination } from "@/hooks/use-pagination";
 import { Pagination } from "@/components/pagination";
 import { formatPokemonName } from "@/lib/utils";
-import { PokemonDialog } from "./pokemon-dialog";
-import PokemonListLoading from "./pokemon-list-loading";
+import { PokemonDialog } from "@/components/pokemon-list/pokemon-dialog";
+import PokemonListLoading from "@/components/pokemon-list/pokemon-list-loading";
 
 interface PokemonListProps {
   page: number;

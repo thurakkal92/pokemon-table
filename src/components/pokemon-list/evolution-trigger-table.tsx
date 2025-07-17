@@ -5,7 +5,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "./ui/card";
+} from "@/components/ui/card";
 import {
   Table,
   TableBody,
@@ -13,10 +13,10 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "./ui/table";
+} from "@/components/ui/table";
 import { useEvolutionTriggers } from "@/hooks/use-pokemon";
-import { Alert, AlertDescription } from "./ui/alert";
-import { Pagination } from "./pagination";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Pagination } from "@/components/pagination";
 import { usePagination } from "@/hooks/use-pagination";
 
 function EvolutionTriggerTable() {
